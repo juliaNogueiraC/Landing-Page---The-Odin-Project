@@ -1,35 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>PetEye, all love for your pets</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <style>
-            /*
+  <title>PetEye, all love for your pets</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
+
+  <style>
+    /*
                       Figma Background for illustrative/preview purposes only.
                       You can remove this style tag with no consequence
                     */
-    
-            
 
-           
-    
-    
 
- 
-	
-	
 
-            
 
-            
-            /**
+
+
+
+
+
+
+
+
+
+
+    /**
 
               body {
             background: #e5e5e5;
@@ -60,90 +58,165 @@
             **/
 
 
+    body {
+      margin: 0;
+      background: #eee;
+      font-family: Lato;
+    }
 
-    </style>
-  </head>
-  <body>
-    <div class="header">
-      <h1 class="logo">PetEye</h1>
-      <div class="links">
-        <ul>
-          <li>
-            <a href="google.com"></a>
-          </li>
-        </ul>
-      </div>
+    .logo {
+      font-family: Lato;
+      font-weight: bold;
+      font-size: 30px;
+      margin-left: 30px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px;
+      background: rgba(245.00000059604645, 186.0000041127205, 122.00000032782555, 1);
+      border-bottom: 1px solid #ddd;
+      box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+    }
+
+    ul {
+      display: flex;
+      margin-right: 30px;
+      padding: 10px;
+      gap: 30px;
+      justify-content: flex-end;
+
+
+    }
+
+    a {
+      /* this removes the line under our links */
+      text-decoration: none;
+      color: black;
+      margin-right: 30px;
+      padding: 10px;
+      font-weight: bold;
+
+    }
+
+    .left,
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+/
+    .home{
+      display: flex;
+      display: flex;
+    flex-direction: row;
+      padding: 800px;
+      background: rgb(255, 255, 255);
+    
+    }
+
+    
+
+    .dir{
+      margin-top: 80px;
+      width: 300px;
+      margin-left: 30px;
+      
+
+    }
+
+    .intro{
+      font-size:20px;
+    }
+
+    .esq{
+      
+      display:flex;
+      justify-content: flex-end;
+      gap:5px;
+      margin-top: -418px;
+
+    }
+
+    .dog{
+     
+      
+      width: 550px;
+      
+      
+      
+    }
+
+    .botaoIni{
+      font-weight: bold;
+      font-size: 15px;
+      font-family: Lato;
+      border: none;
+  border-radius: 8px;
+  color: black;
+  padding: 8px 24px;
+     background: rgba(245.00000059604645, 186.0000041127205, 122.00000032782555, 1);
+     box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+     width:213px;
+	height:50px;
+  left:50px;
+  
+  
+
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+	border-bottom-left-radius:20px;
+	border-bottom-right-radius:20px;
+    }
+
+    
+    
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo">
+      PetEye
     </div>
+    <ul class="links">
+      <li><a href="google.com">WhatsApp</a></li>
+
+    </ul>
+  </div>
+
+
 
     <div class="home">
-        <div class="dir">
+      <div class="dir">
         <h1>The Best store,</h1>
         <h1>For your best friend</h1>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Tincidunt praesent semper feugiat nibh sed pulvinar.</p>
+        <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Tincidunt praesent semper feugiat nibh sed pulvinar.</p>
 
-        botao 
+          <button class="botaoIni">
+            Click here to know more
+          </button>
 
-        </div>
-        <div class='esq'>
-            imagem do dog
-        </div>
+      </div>
+      <div class='esq'>
+        <img class="dog" src="./images/flouffy__dmo9dm_gku_unsplash_1.png" alt="doguinho">
+      </div>
+
+
+
+
+
+
+
 
     
-        
 
 
 
+</body>
 
-    </div>
-
-    <div class="services">
-        ajieta os cartões
-
-        <div class="modal">
-            <div class="icon">!</div>
-            <div class="container">
-              <div class="header">Are you sure you want to do that?
-                <div class="close-button">✖</div>
-              </div>
-              <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur excepturi id soluta, numquam minima rerum doloremque eveniet aspernatur beatae commodi. Cupiditate recusandae ad repellendus quidem consectetur sequi amet aspernatur cumque!</div>
-              <button class="continue">Continue</button>
-              <button class="cancel">Cancel</button>
-    </div>
-
-
-
-    <div class="clientes">
-        <h1>Our Customers</h1>
-
-        ajeita o diretorio das imagens e as desc com titulo 
-        <div class="container">
-            <div class="info">
-              <img src="./barberry.png" alt="barberry">
-              <div class="text">This is a type of plant. We love this one.</div>
-            </div>
-            <div class="info">
-              <img src="./chilli.png" alt="chili">
-              <div class="text">This is another type of plant. Isn't it nice</div>
-            </div>
-            <div class="info">
-              <img src="./pepper.png" alt="pepper">
-              <div class="text">We have so many plants. Yay plants.</div>
-            </div>
-            <div class="info">
-              <img src="./saffron.png" alt="saffron">
-              <div class="text">I'm running out of things to say about plants.</div>
-            </div>
-
-
-    </div>
-
-
-    <div class="footer">
-        imagem
-
-        <h5>Copyright Julia Nogueira © 2022</h5>
-    </div>
-  </body>
 </html>
